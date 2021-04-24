@@ -1,0 +1,14 @@
+.About {
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( to bottom right, rgb(5, 28, 36), white);
+}
+
+.heading{
+    position: absolute;
+    top:70px;
+    left:600px;
+    bottom: -5px;
+}
