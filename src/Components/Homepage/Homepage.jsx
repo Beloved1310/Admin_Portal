@@ -1,23 +1,20 @@
-import React from 'react';
-import '.././../CSS/Homepage.css'
+import React from "react";
+import ".././../CSS/Homepage.css";
 
-function Homepage() {
+function Home({ title, content, image }) {
   return (
-    <div className= "homepage">
-      <header className= "App-header">
-        <Page />
-        </header>
+    <div className="">
+      <h1 className="heading">{title}</h1>
+      <article>
+        <p>
+          <i>{content}</i>
+        </p>
+      </article>
+      <div className="image">
+        <img src={image} alt={title} />
+      </div>
     </div>
   );
 }
 
-const Page =() =>{
-    return(
-    <article>
-    <h1>TRIUMPH</h1>
-    <p><i>A home of Career oppourtunity</i></p>
-    </article>
-    );
-};
-
-export default Homepage;
+export default Home;
