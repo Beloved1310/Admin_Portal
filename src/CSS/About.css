@@ -3,7 +3,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient( to bottom right, rgb(5, 28, 36), white);
+    background-image: white;
 }
 
 .heading{
