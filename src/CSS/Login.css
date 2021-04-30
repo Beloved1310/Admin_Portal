@@ -11,7 +11,10 @@ input, button{
     border:none;
     outline:none;
 }
-
+.medium{
+    height:2.5rem;
+    font-size: 1rem;
+}
 .App {
     height: 100vh;
     display:flex;
@@ -34,7 +37,7 @@ form::after {
     right: -5px;
     bottom: -5px;
     z-index: 1;
-    background-image: linear-gradient( to bottom right, rgb(5, 28, 36), white);
+    background-image: white;
 }
 
 form .form-inner{
@@ -71,7 +74,7 @@ form .form-inner .form-group input {
     display:block;
     width:100%;
     padding: 10px 15px;
-    background-color: violet;
+    background-color:burlywood;
     border-radius: 8px;
     transition: 0.4s;
 }
