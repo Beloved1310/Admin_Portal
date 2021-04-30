@@ -1,22 +1,23 @@
 import React from 'react';
 import '.././../CSS/Login.css'
 
-function Login() {
+function Login(props) {
+  const { size = 'medium'} = props
   return (
     <form className= "App">
       <div className="form-inner">
         <h2>Login</h2>
         <div className="form-group">
           <label htmlFor="name">Name:</label>
-          <input type="text" name="name" id="name" />
+          <input className={`input ${size} {...rest}`} />
         </div>
         <div className="form-group">
           <label htmlFor="email">Email:</label>
-          <input type="email" name="email" id="email" />
+          <input className={`input ${size} {...rest}`} />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password: </label>
-          <input type="password" name="password" id="password" />
+          <label htmlFor="password">Password </label>
+          <input className={`input ${size} {...rest}`} />
         </div>
         <div className="button">
         <button>LOGIN</button>
